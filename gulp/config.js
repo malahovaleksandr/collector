@@ -11,7 +11,6 @@ module.exports = {
             dist: 'public/css/'
         },
         js: {
-
             src: 'resourse/js/*.js',
             dist: 'public/js/'
         },
@@ -30,9 +29,10 @@ module.exports = {
     root: './public',
 
     clean: [
-        './public/css',
-        './public/js',
-        './public/image'
+        './public/css/*.css',
+        './public/js/*.js',
+        './public/image/*',
+        './public/page/*.html'
     ],
 
     spriteSvgConfig: {

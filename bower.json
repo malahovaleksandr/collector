@@ -1,0 +1,7 @@
+{
+  "name": "collector",
+  "dependencies": {
+    "jquery": "2.2.4",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}
