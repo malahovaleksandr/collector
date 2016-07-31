@@ -1,0 +1,33 @@
+include add/_mixin
+
+doctype HTML
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+
+        meta(name="description" content="loft")
+
+        link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        link(rel="icon" href="../favicon.ico" type="image/x-icon")
+
+        link(rel="stylesheet" href="/css/main.css")
+        block head
+
+    body
+        .svg_box
+            svg.svg
+                |тут будет svg!!!!!!!!!!!
+                use(xlink:href="image/sprite.svg#icon--close")
+
+        block content
+            aside.menu
+        block menu
+        .text это главная страница
+        script(type="text/javascript" src="js/app.js")
+        footer.footer
+            |2016
+            block foot
+
+
+

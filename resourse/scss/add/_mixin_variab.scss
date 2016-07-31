@@ -1,0 +1,16 @@
+$rep:green;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  -ms-border-radius: $radius;
+};
+@mixin transition($property, $duration, $timing){
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  -o-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+@mixin adaptive($minWidth,$maxWidth){
+  @media screen and (min-width: $minWidth) and (max-width:$maxWidth){}
+};
